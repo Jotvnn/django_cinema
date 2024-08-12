@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    * {
+        margin:0;
+        padding:0;
+    }
+    sidebar {
+        display:row;
+
+        width: 20%;
+        height: 600px;
+        background-color: purple;
+    }
+    .container{
+        display: flex;
+        height: 600px;
+    }
+    main{
+        display:flex;
+        display:column;
+        background-color: white;
+        width:100%;
+    }
+    footer{
+        display: flex;
+        background-color: black;
+        height: 200px;
+        color: white;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 20px;
+    }
+    .nav{
+        padding: 10px;
+        justify-content: space-between;
+        height:30px;
+        background-color: blue;
+        display:flex;
+    }
+    .nav-child{
+        display:flex;
+        margin: 5px;
+        grid-gap:10px;
+    }
+</style>
+<nav>
+    <div class="nav-child">
+        <div>
+            <a href="">test </a>
+        </div>
+        <div>
+            <a href="">test </a>
+        </div>
+        <div>
+            <a href="">test </a>
+        </div>
+
+    </div>
+    <div> centrer</div>
+    <div  class="nav-child">
+        <div>
+            <a href="">test </a>
+        </div>
+        <div>
+            <a href="">test </a>
+        </div>
+        <div>
+            <a href="">test </a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <sidebar class="sidebar-left">
+        sidebar left
+    </sidebar>
+    <main>
+    1
+    </main>
+    <sidebar class="sidebar-right">
+        sidebar right
+    </sidebar>
+</div>
+<footer>
+         2024
+</footer>
+</body>
+</html>

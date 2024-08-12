@@ -1,0 +1,11 @@
+<h1>filters</h1>
+
+<form action="{% url 'cinema' %}">
+    <select name="genres" id="genres">
+                <option value="{{ active }}"><b><i>{{ active }}</i></b></option>
+    {% for item in cinema_type %}
+        <option value="{{ item }}"><b><i>{{ item }}</i></b></option>
+    {% endfor %}
+    </select>
+    <input type="submit" value="send">
+</form>

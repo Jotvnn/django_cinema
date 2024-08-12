@@ -1,0 +1,35 @@
+*    {
+    padding:0;
+    margin:0;
+    font-family: "Arial" Shogun, Gothic Italic, cursive
+}
+#nav{
+    height:40px;
+    margin:0;
+    padding:20px;
+    display: block;
+    color: blue;
+    }
+.mytagh1{
+    margin:20px;
+    }
+.logo{
+    height:50px;
+    width:50px;
+    }
+.picture {
+    display:flex;
+    justify-content: center;
+}
+.preview {
+    height: 200px;
+    width: 200px;
+}
+
+footer {
+    background-color: cmyk(44, 88, 66)
+    margin: 200px auto;
+    padding: 100px auto;
+    align: center;
+}
+

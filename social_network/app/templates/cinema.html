@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{%  block title %}
+    fdf
+{%  endblock title %}
+
+{% block body %}
+
+    <div class="picture">
+
+        {% for item in data %}
+        <div style="display:grid;">
+            <img class="preview" src="{{ item.preview_image.url }}" alt="">{{ item.name }}<br>  Дата выхода:{{ item.date }}
+            <p></p>
+        </div>
+        {% endfor %}
+            {{ data.generate_name_image }}
+    </div>
+
+{% endblock body %}

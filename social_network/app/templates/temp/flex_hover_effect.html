@@ -1,0 +1,130 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        ::is(heder, nav, title) > p
+        input[type='button']
+        justify-content:center;
+
+<style>
+    .gallery{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .item{
+        border-radius: 10px;
+        width:200px;
+        height:450px;
+        background-color:grey;
+        opacity: 0.5;
+        transition-duration: 0.5s;
+        text-align: center;
+    }
+
+    .item:hover{
+        color:red;
+        width:300px;
+        opacity: 1;
+        transition-duration: 0.5s;
+    }
+    .img1{
+        background: linear-gradient(black, white);
+    }
+    .img2{
+        background: linear-gradient(black, green);
+    }
+    .img3{
+        background: linear-gradient(black, red);
+    }
+    .img4{
+        background: linear-gradient(black, blue);
+    }
+    .img5{
+        background: linear-gradient(black, yellow);
+    }
+
+    .pg-20{
+        padding:20px;
+    }
+    .mg-20{
+        margin:20px;
+    }
+</style>
+
+<div class="gallery">
+    <div class="item img1"><p>item1 text more</p></div>
+    <div class="item img2"><p>item1 text more</p></div>
+    <div class="item img3"><p>item1 text more</p></div>
+    <div class="item img4"><p>item1 text more</p></div>
+    <div class="item img5"><p>item1 text more</p></div>
+</div>
+
+
+<div class="gallery pg-20 mg-20">
+    text
+</div>
+
+
+<style>
+    .ball{
+    width:15px;
+    background-color:red;
+    border-radius:50%;
+    animation-name: ball-anim;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinity;
+    position: relative;
+    left:0;
+    }
+
+    @keyframes ball-anim{
+        0%{
+            left:0px;
+            top:0px;
+            background-color:red;
+        }
+        25%{
+            left:200px;
+            top:0px;
+
+            background-color:green;
+        }
+        50%{
+            left:200px;
+            top:200px;
+            background-color:yellow;
+        }
+        75%{
+            left:0px;
+            top:200px;
+
+            background-color:yellow;
+        }
+        100%{
+            left:0px;
+            bottom:0px;
+            background-color:blue;
+        }
+
+    }
+</style>
+
+<div class="animation">
+    <div class="ball">
+        O
+    </div>
+</div>
+
+
+
+</body>
+</html>

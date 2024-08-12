@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+* {
+        margin:0;
+        padding:0;
+    }
+:root{
+    --footer_color:yellow;
+}
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: grey;
+    height:50px;
+
+    }
+.nav-1 {
+    background-color:red;
+    display:flex;
+    position:relative;
+    height:100%;
+    align-items: center;
+
+}
+.sidebar {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: green;
+    width:20%;
+    height:600px;
+    }
+
+.sidebar-right {
+    align-items:right;
+}
+.sidebar-left {
+    align-items:left;
+}
+
+
+.body{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    width:80%;
+    height:600px;
+
+}
+
+footer{
+    clear:both;
+    width:100%;
+    background-color:var(--footer_color);
+    height:200px;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    padding: 20px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    background-color: pink;
+}
+
+hr{
+    border:2px solid black;
+    }
+
+</style>
+<body>
+    <nav>
+        <div class="nav-1">
+            <div >1.1</div>
+            <div >1.2</div>
+            <div >1.3</div>
+            <div >1.4</div>
+            <div >1.5</div>
+        </div>
+        <div>2</div>
+        <div>3</div>
+    </nav>
+<div class="col">
+    <div class="sidebar sidebar-left">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="body">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+        <div class="sidebar sidebar-right">
+        <div>41</div>
+        <div>42</div>
+        <div>43</div>
+    </div>
+</div>
+    <hr>
+    <footer>
+        copy 2024
+    </footer>
+</body>
+
+<script>
+
+
+</script>
+</html>

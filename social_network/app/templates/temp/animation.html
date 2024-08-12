@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+</head>
+<body>
+
+<style>
+
+    :root{
+        --size_square:50px
+    }
+
+    #square{
+        display:row;
+        position: absolute;
+        background-color: black;
+        width: var(--size_square);
+        height: var(--size_square);
+        left: calc(50% - var(--size_square)/2);
+        top: calc(50% - var(--size_square)/2);
+        animation-name: square_repeat;
+        animation-duration: 6s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes square_repeat {
+        0%{
+            left: calc(50% - var(--size_square)/2);
+            top: calc(50% - var(--size_square)/2);
+        }
+        15%{
+            left: calc(45% - var(-size_square)/2);
+            top: calc(95% - var(-size_square)/2);
+        }
+        25%{
+            top: calc(95% - var(--size_square)/2);
+            left: 0;
+        }
+        35%{
+            top: 0;
+            left: calc(95% - var(--size_square)/2);
+        }
+        50%{
+            left: calc(50% - var(--size_square)/2);
+            top: 0;
+        }
+        75%{
+            left: 0;
+            top: calc(95% - var(--size_square)/2);
+        }
+        100%{
+            left: calc(75% - var(--size_square)/2);
+            top: calc(25% - var(--size_square)/2);
+        }
+    }
+
+</style>
+
+<div id="square">
+
+</div>
+
+</body>
+</html>

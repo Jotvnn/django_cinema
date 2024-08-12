@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+</head>
+<body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .gallery{
+        display: flex;
+        background-color: black;
+        justify-content: center;
+    }
+    .item{
+       display: flex;
+       align-items: center;
+       width: 250px;
+       background-color: grey;
+       border-radius: 5%;
+       height: 1000px;
+       transition-duration: 0.75s;
+    opacity: .75;
+    }
+    .item:hover{
+        width: 550px;
+        transition-duration: 0.75s;
+        opacity: 1;
+    }
+
+    .img1{
+        background: url('media/1.png');
+        background-size:100%;
+        background-size: cover;
+        background-size: center;
+    }
+    .img2{
+        background: url('media/2.png');
+        background-size:100%;
+        background-size: cover;
+        background-size: center;
+    }
+    .img3{
+        background: url('media/3.png');
+        background-size:100%;
+        background-size: cover;
+        background-size: center;
+    }
+    .img4{
+        background: url('media/4.png');
+        background-size:100%;
+        background-size: cover;
+        background-size: center
+    }
+    .img5{
+        background: url('media/5.png');
+        background-size:100%;
+        background-size: cover;
+        background-size: center
+    }
+</style>
+
+<div class="gallery">
+    <div class="item img1"></div>
+    <div class="item img2"></div>
+    <div class="item img3"></div>
+    <div class="item img4"></div>
+    <div class="item img5"></div>
+</div>
+
+
+
+</body>
+</html>
